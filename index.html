@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no">
+  <meta name="description" content="Really simple css animation">
+  <meta name="keywords" content="CSS, Animation, Easy as hell">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta name="author" content="linxea">
+  <title>Cheeky Clown</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="shortcut icon"  href="./img/logo.png"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <style>
+	  
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;  
+  background-color: #FFDCA7;
+  overflow-x: hidden;
+}
+.navbar-brand img{
+  height: 50px;
+  width: 90px;
+}
+.btn
+{
+  background-image: linear-gradient(160deg,#FD3F25,#FD3F25);
+  border: none;
+  border-radius: 50px;
+  color: #f8f8f8;
+  font-family: Audiowide,sans-serif;
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 16px;
+    margin-right: 4px;
+  
+}
+#nav-li{
+  color: #336699;
+  font-size: 18px;
+  font-weight: bold;
+}
+#nav-li:hover {
+  color: #ff462c;
+}
+#navbar{
+  z-index: 300;
+}
+
+/*  */
+/* width */
+::-webkit-scrollbar {
+width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #a3a3a3;
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #ff462c;
+}
+
+
+/*  */
+#boom{
+margin: 0;
+padding: -20px;
+background-image: url(./img/shutterstock_1206887689.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+#cortinaL, #cortinaR{
+position: absolute;
+top: 0px;
+z-index: 50;
+height: 100vh;
+width: 0%;
+margin-top: 0px;
+}
+
+#cortinaL{
+left: 0px;
+-webkit-animation-name: example; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+animation-name: example;
+animation-duration: 4s;
+border-right: 1px solid rgba(0,0,0,0.8);
+
+}
+
+#cortinaR{
+right: 0px;
+-webkit-animation-name: example; /* Chrome, Safari, Opera */
+-webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+animation-name: example;
+animation-duration: 4s;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+from {width: 50%;}
+to {width: 0%;}
+}
+
+/* Standard syntax */
+@keyframes example {
+ from {width: 50%;}
+to {width: 0%;}
+}
+
+/* 
+*/
+
+
+.nftimg{
+
+
+display: flex;
+justify-content: space-evenly;
+justify-content: center;
+
+
+}
+.text{
+position: relative;
+align-items: center;
+text-align: center;
+padding-top: 70px;
+display: flex;
+flex-direction: column;
+
+}
+
+
+.float-ease {
+animation: float 5s infinite ease;
+justify-content: start;
+}
+
+.float-ease-in {
+animation: float 5s infinite ease-in;
+}
+
+.float-ease-in-out {
+animation: float 5s infinite ease-in-out;
+}
+
+.float-ease-out {
+animation: float 5s infinite ease-out;
+}
+
+@keyframes float {
+0% {
+  transform: translateY(0);
+  -webkit-transform: translateX(0);
+}
+
+50% {
+  transform: translateX(-0.6rem);
+  -webkit-transform: translateX(0.6rem);
+}
+
+100% {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+}
+.title
+{
+background-color: #F74306;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+text-align: center;
+-webkit-filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+font-size: 40px;
+font-weight: 400;
+line-height: 60px;
+margin-top: -20px;
+font-weight: bold;
+}
+html{
+overflow-x: hidden;
+}
+.h1 {
+animation: move 1s;
+-webkit-animation: move 1s;
+
+}
+
+p{
+animation: movep 1.2s;
+color: #000000;
+font-weight: bold;
+}
+
+@keyframes move {
+from {
+margin-left: 100%;
+width: 300%; 
+}
+
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
+        
+@-webkit-keyframes move {
+from {
+margin-left: 100%;
+width: 300%; 
+}
+
+to {
+margin-left: 0%;
+width: 100%;
+}
+}
+
+p{
+display: inline-block;
+-webkit-filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+font-size:  25px;
+font-weight: 10;
+
+}
+a{
+text-decoration: none;
+color: #F2EDE1;
+
+}
+.par{
+display: inline-block;
+color: #35679A;
+
+font-size: 0.9em;
+line-height: 1.7em;
+
+}
+#about{
+color: #35679A;
+font-size:  18px;
+text-align: center;
+}
+
+@media (max-width: 1200px) {
+#opaci {
+opacity: 0;
+}
+}
+@media (max-width: 1200px) {
+#opa {
+margin-left: 100px;
+}
+}
+@media (max-width: 640px) {
+#opaci {
+opacity: 0;
+}
+}
+
+.yelo
+{
+background: #FA5846;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+
+-webkit-filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+font-size: 50px;
+font-weight: 400;
+
+}
+
+/*  */
+
+
+.body {	
+margin: 0;
+padding: 0;
+
+}
+
+/* ================ The Timeline ================ */
+
+.timeline {
+position: relative;
+width: 660px;
+margin: 0 auto;
+margin-top: 20px;
+padding: 1em 0;
+list-style-type: none;
+}
+
+.timeline:before {
+position: absolute;
+left: 50%;
+top: 0;
+content: ' ';
+display: block;
+width: 6px;
+height: 100%;
+margin-left: -3px;
+background: rgb(80,80,80);
+background: -moz-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(102, 164, 235)), color-stop(100%,rgba(125,185,232,1)));
+background: -webkit-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+background: -o-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+background: -ms-linear-gradient(top, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+
+z-index: 5;
+}
+
+.timeline li {
+padding: 1em 0;
+}
+
+.timeline li:after {
+content: "";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.direction-l {
+position: relative;
+width: 300px;
+float: left;
+text-align: right;
+}
+
+.direction-r {
+position: relative;
+width: 300px;
+float: right;
+}
+
+.flag-wrapper {
+position: relative;
+display: inline-block;
+
+text-align: center;
+}
+
+.flag {
+position: relative;
+display: inline;
+background: linear-gradient(160deg,#FD3F25,#FD3F25);
+padding: 6px 10px;
+border-radius: 5px;
+
+font-weight: 600;
+text-align: left;
+}
+
+.direction-l .flag {
+-webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+-moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-r .flag {
+-webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+-moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+}
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+position: absolute;
+top: 50%;
+right: -35px;
+content: ' ';
+display: block;
+width: 12px;
+height: 12px;
+margin-top: -10px;
+
+border-radius: 10px;
+background: #ff462c;
+z-index: 10;
+}
+
+.direction-r .flag:before {
+left: -36px;
+}
+
+.direction-l .flag:after {
+content: "";
+position: absolute;
+left: 100%;
+top: 50%;
+height: 0;
+width: 0;
+margin-top: -8px;
+border: solid transparent;
+border-left-color: #336699;
+border-width: 8px;
+pointer-events: none;
+}
+
+.direction-r .flag:after {
+content: "";
+position: absolute;
+right: 100%;
+top: 50%;
+height: 0;
+width: 0;
+margin-top: -8px;
+border: solid transparent;
+border-right-color: #ff462c;
+border-width: 8px;
+pointer-events: none;
+}
+
+#size{
+	height: 500px;
+	width: 500px;
+}
+
+#size2{
+	height: 500px;
+	width: 500px;
+}
+
+.time-wrapper {
+display: inline;
+
+line-height: 1em;
+font-size: 0.66666em;
+background: #ff462c;
+vertical-align: middle;
+}
+.lead
+{
+font-size: 0.9em;
+line-height: 1.5em;
+}
+.direction-l .time-wrapper {
+float: left;
+}
+
+.direction-r .time-wrapper {
+float: right;
+}
+
+.time {
+display: inline-block;
+padding: 4px 6px;
+background: rgb(248,248,248);
+}
+
+.desc {
+margin: 1em 0.75em 0 0;
+color: #336699;
+font-size: 0.77777em;
+line-height: 1.5em;
+}
+
+.direction-r .desc {
+margin: 1em 0 0 0.75em;
+}
+
+/* ================ Timeline Media Queries ================ */
+
+@media screen and (max-width: 660px) {
+
+#size{
+	height: 330px;
+	width: 330px;
+}
+#size2{
+	height: 350px;
+	width: 350px;
+}
+
+.timeline {
+width: 100%;
+padding: 4em 0 1em 0;
+}
+
+.timeline li {
+padding: 2em 0;
+}
+
+.direction-l,
+.direction-r {
+float: none;
+width: 100%;
+
+text-align: center;
+}
+
+.flag-wrapper {
+text-align: center;
+}
+
+.flag {
+background: #35679A;
+z-index: 15;
+
+}
+#color{
+	color: #ffffff;
+}
+
+
+.direction-l .flag:before,
+.direction-r .flag:before {
+position: absolute;
+top: -30px;
+left: 50%;
+content: ' ';
+display: block;
+width: 12px;
+height: 12px;
+margin-left: -9px;
+background: #35679A;
+border-radius: 10px;
+border: 4px solid rgb(255,80,80);
+z-index: 10;
+}
+
+.direction-l .flag:after,
+.direction-r .flag:after {
+content: "";
+position: absolute;
+left: 50%;
+top: -8px;
+height: 0;
+width: 0;
+margin-left: -8px;
+border: solid transparent;
+border-bottom-color: #35679A;
+border-width: 8px;
+pointer-events: none;
+}
+
+.time-wrapper {
+display: block;
+position: relative;
+margin: 4px 0 0 0;
+z-index: 14;
+}
+
+.direction-l .time-wrapper {
+float: none;
+}
+
+.direction-r .time-wrapper {
+float: none;
+}
+
+.desc {
+position: relative;
+margin: 1em 0 0 0;
+padding: 1em;
+background: #FA5846;
+-webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+-moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
+box-shadow: 0 0 1px rgba(0,0,0,0.20);
+
+z-index: 15;
+}
+
+.direction-l .desc,
+.direction-r .desc {
+position: relative;
+margin: 1em 1em 0 1em;
+padding: 1em;
+
+z-index: 15;
+}
+
+}
+
+@media screen and (min-width: 400px ) {
+
+.direction-l .desc,
+.direction-r .desc {
+margin: 1em 4em 0 4em;
+}
+
+}
+
+
+/*  */
+
+.TeamRoot {
+margin-top: 96px;
+display: flex;
+flex-direction: column;
+}
+.TeamMembers {
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex-wrap: wrap;
+}
+.elementor img {
+height: auto;
+max-width: 100%;
+border: none;
+-webkit-border-radius: 0;
+border-radius: 0;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+.TeamMember {
+display: flex;
+flex-direction: column;
+margin: 16px 32px 32px;
+align-items: center;
+}
+.TeamRoot {
+margin-top: 96px;
+display: flex;
+flex-direction: column;
+}
+
+/*  */
+
+
+
+h1 {
+margin: 0;
+line-height: 2;
+text-align: center;
+}
+
+h2 {
+margin: 0 0 0.5em;
+font-weight: normal;
+}
+
+input {
+position: absolute;
+opacity: 0;
+z-index: -1;
+}
+
+.row {
+display: flex;
+}
+.row .col {
+flex: 1;
+}
+.row .col:last-child {
+margin-left: 1em;
+}
+
+/* Accordion styles */
+.tabs {
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+width: 100%;
+color: white;
+overflow: hidden;
+}
+.tab-label {
+display: flex;
+justify-content: space-between;
+padding: 1em;
+background: linear-gradient(160deg,#FD3F25,#FD3F25);;
+font-weight: bold;
+cursor: pointer;
+/* Icon */
+}
+.tab-label:hover {
+background: linear-gradient(160deg,#FD3F25,#FD3F25);;
+}
+.tab-label::after {
+content: "❯";
+width: 1em;
+height: 1em;
+text-align: center;
+transition: all 0.35s;
+}
+.tab-content {
+max-height: 0;
+padding: 0 1em;
+color: #ff462c;
+background: white;
+transition: all 0.35s;
+}
+.tab-close {
+display: flex;
+justify-content: flex-end;
+padding: 1em;
+font-size: 0.75em;
+background: linear-gradient(160deg,#FD3F25,#FD3F25);;
+cursor: pointer;
+}
+.tab-close:hover {
+background: linear-gradient(160deg,#FD3F25,#FD3F25);;
+}
+
+input:checked + .tab-label {
+background: linear-gradient(160deg,#FD3F25,#FD3F25);;
+}
+input:checked + .tab-label::after {
+transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+max-height: 100vh;
+padding: 1em;
+}
+
+
+/* footer */
+
+
+.copyright-text
+{
+  margin:0
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  
+}
+.social-icons li.title
+{
+ 
+  text-transform:uppercase;
+  color:#35679A;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#FD3F25;
+  color:#35679A;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#ffffff
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.instagram:hover
+{
+  background-color:#eb5c5c
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+
+.social-icons a.discord:hover
+{
+  background-color:#4c71ea
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+  </style>
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " id="nav-li" href="#ab" tabindex="-1" aria-disabled="true">About Us </a>
+            </li>
+            <li class="nav-item">
+              <a  class="nav-link " id="nav-li" aria-current="page" href="#ri">Ringmasters</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" id="nav-li" href="#ro">Roadmap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  id="nav-li" href="#fa">FAQs</a>
+            </li>
+          </ul>
+            <button class="btn" type="submit"><a href="#ro">Roadmap</a></button>
+            <button  class="btn" type="submit"><a href="https://discord.com/invite/QRqn2e5T5C"> Join Discord</a></button>
+        </div>
+      </div>
+    </nav>
+    <section id="boom" >
+      
+        <div  class="content">
+          <div class="text">
+            <h1 class="title h1">Cheeky Clown Circus Club</h1>
+              <p class="move" style="font-weight: 100;font-weight: 500;
+              line-height: 1.2; color: #336699;" >
+                "Cheeky Clown Circus Club
+The Circus is coming to town!  <br> Join the show and be part
+of the greatest joke in the Metaverse!"
+               </p>
+               <br>
+               <a class="btn " href="https://discord.com/invite/QRqn2e5T5C">Join Discord</a>
+          </div>
+               <div class="nftimg" style="">
+                   <div id="opaci" class=" float-ease-in-out">
+                    <img  style="width: 180px;height: 180px;margin-top: 160px;" src="./img/_36-removebg-preview.png" alt="">
+                  </div>
+                  <div class=" float-ease">
+                    <img id="opaci" style="width: 190px;height: 200px; margin-top: 140px;" src="./img/afro.png" alt="">
+                  </div>
+                  <div id="opaci" class=" float-ease-in-out">
+                    <img  style="width: 230px;height: 230px;margin-top: 110px;" src="./img/2.png" alt="">
+                  </div>
+                  <div  class=" float-ease-in-out">
+                    <img style="width: 340px;height: 340px;" src="./img/ringmastergood.png" alt="">
+                  </div>
+                <div id="opaci" class=" float-ease-in-out">
+                  <img style="width: 270px;height: 270px;margin-top: 70px;" src="./img/14.png" alt="">
+                </div>
+                <div id="opaci" class=" float-ease-in-out">
+                  <img style="width: 190px;height: 190px;margin-top: 150px;" src="./img/4.png" alt="">
+                </div>
+                <div id="opaci" class=" float-ease-in-out">
+                    <img  style="width: 180px;height: 180px;margin-top: 160px;" src="./img/_12-removebg-preview.png" alt="">
+                  </div>
+                
+              </div>
+        </div>
+      
+    </section>
+    <section id="ab" class="container">
+      <div class="row" >
+        <div class="col-md-12 mt-5">
+          <h2 class="title" >About the Cheeky Clown</h2>
+          <h4 id="about">It is the year 2069, Earth is boring to death. Laughter is banned in order to not offend individual sensibilities.</h4>
+        </div>
+        <div class="col-md-6 mt-5">
+          <p class="par">The clown, a forbidden symbol since the year 2052, had been considered too offensive to people with big feet. Elon's memes and legacy are well alive on Mars, but monotony and rage have taken hold of the life of every human being who stayed on earth. <br><br>
+
+            For years, the Cheeky Clown CC community had been building a place to accommodate the laughs of the remaining dissidents. Free of any constraint, each bit of laughter, sarcasm and self deprecation have been highly valued and encouraged! <br><br>
+            
+            Join us, fellow clowns, let's laugh and save the world together! 
+            Honk Honk
+            </p>
+            <button class="btn" type="submit"><a href="#ro">Roadmap</a> </button>
+            <button class="btn" type="submit"><a href="https://discord.com/invite/QRqn2e5T5C"> Join Discord</a></button>
+        </div>
+        <div class="col-md-6 mt-5">
+          <iframe width="340" height="340" src=".//img/video final.mp4">
+          </iframe>
+        </div>
+      </div>
+      
+ </div>
+  </section>
+
+
+  <section id="ri" class="container">
+    <div class="row" >
+      
+      <div class="col-md-6 mt-5" style="    text-align: left;  ">
+        <img src="./img/ringmaster2.png" alt="" id="size2">
+      </div>
+      <div class="col-md-6 mt-5"  >
+        <h3 style="color: #F74306; font-size: 3.1em;" >Ringmaster Genesis Collection</h3>
+        <br>
+        <p class="par" style=" font-size: 1.25em;" >500 unique Cheeky Ringmasters are part of the Cheeky Circus. They will all be minted on the Genesis Collection on February 14th. Special rewards (royalties from the Community Pool and whitelisting for the rest of the collection) will be given for the owners.<br><br>
+
+        1 Golden Ringmaster will be part of the collection. If you find him, you will receive a 100g Swiss Gold Bullion!
+        </p>
+		</div>
+      </section>
+
+        <div class="container" style="margin-top: 110px;">
+          <div class="row">
+          <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+              <div class="wpb_wrapper">
+             
+	      <div class="wpb_text_column wpb_content_element  vc_custom_1634749147235">
+	      	<div class="wpb_wrapper">
+			      <h1 class="title" style="text-align: center; margin: 0;padding: 0;">RECORD YOUR LAUGH AND TURN IT INTO AN NFT!</h1>
+            <p class="lead color-secondary" style="text-align: center; color: #ffffff;">
+            <br><h4 id="about" >
+            That’s right! Basically, we want every Cheeky Clown owner to be able to integrate their laugh into their NFTs to make them unique, original and fun!.
+            </h4>
+          </p>
+          </div>
+	      </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="wpb_column vc_column_container vc_col-sm-3">
+  <div class="vc_column-inner ">
+  <div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey" style="text-align: center;">
+        <h4 class="yelo" >Step 1</h4><p style="color :#FA5846;">Mint a Cheeky Clown</p>
+     
+	<div class="wpb_text_column wpb_content_element  vc_custom_1634749308266">
+		<div class="wpb_wrapper">
+			<p class="par" style="text-align: center; "><h4 id="about" >Link your wallet to the website on February 14th, 20h Eastern Time and have your Ethereum ready. Click on Mint and your Cheeky Clown will appear shortly in your wallet!</p>
+			</h4>
+			</p>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<div class="wpb_column vc_column_container vc_col-sm-3">
+  <div class="vc_column-inner ">
+  <div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey" style="text-align: center;">
+        <h4 class="yelo" >Step 2</h4>	<p style="color: #FA5846;">Record your Laugh</p> 	
+        
+	<div class="wpb_text_column wpb_content_element  vc_custom_1634749312199">
+		<div class="wpb_wrapper">
+			<p class="par" style="text-align: center; "><h4 id="about" >This is where the fun part begins. You will gather with a bunch of friends, preferably those who have been known to have that cheeky, funny laugh, around a microphone. Laugh out loud shamelessly, until you come up with the craziest, funniest laugh. Sober or not!</p>
+</h4>
+
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+	    </p>
+	    </p>
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey" style="text-align: center;">
+        <h4 class="yelo" >Step 3</h4>	<p style="color: #FA5846;">Send your laugh and see your Clown evolve</p>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1634749316707">
+		<div class="wpb_wrapper">
+			<p class="par" style="text-align: center; "><h4 id="about" >You send your laugh with your contract address, and a small Ethereum fee that will be added to the community pool, you give us some time to approve the transaction and then see your Cheeky Clown evolve into a Cheeky Laughing Clown! Your laugh will be forever immortalized into an NFT!
+      </p> </h4>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+	    </p>
+	    </p>
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey" style="text-align: center;">
+        <h4 class="yelo" >Step 4</h4>	<p style="color: #FA5846;">Receive rewards!</p>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1634749321816">
+		<div class="wpb_wrapper">
+			<p class="par" style="text-align: center;"><h4 id="about" >Your laugh just became very valuable! Every week, we will pick winners, which will receive rewards from the community pool. Every one who participates will receive compensations.</p></h4>
+</p>
+</p>
+		</div>
+	</div>
+</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper vc_box_rounded  vc_box_border_grey" style="text-align: center;">
+        <h4 class="yelo" >Step 5</h4>	<p style="color: #FA5846;">Join the First Circus in the Metaverse</p>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1634749316707">
+		<div class="wpb_wrapper">
+			<p class="par" style="text-align: center; "><h4 id="about" >The Community Pool will be used to buy Multiple lands and create the first Virtual Metaverse Circus! Join us and let's make sure our Metaverse is filled with laughter and satire.
+      </p></h4>
+
+		</div>
+	</div>
+</div></div></div>
+      </div>
+    </div>
+    </section>
+    </div>
+  </div>
+  </section>
+
+
+  <section class="container">
+    <div class="row" >
+      <div class="col-md-6 mt-5" style="    text-align: left;  ">
+        <img src="./img/rogue2.png" alt="" id="size">
+      </div>
+      <div class="col-md-6 mt-5"  >
+        <h3 style="color: #F74306; font-size: 3.1em;" >Rogue Clowns</h3>
+        <br>
+        <p class="par" style=" font-size: 1.3em;" >5 Rogue Clowns are roaming free in the Circus! They are each wanted for a specific crime.
+         
+       <br><br>Mint one of them and you will receive a very Cheeky Reward! From a Tesla S Model to a Sandbox Parcel, 5 winners will be announced right after the minting date!
+        </p>
+      </div>
+    </div>
+    </section>
+
+  <section id="ro" class="body">
+    
+    <div class="col-md-12 mt-5">
+    
+      <br><br><h2 class="title" >OUR ROADMAP</h2>
+     
+    </div>
+<!-- The Timeline -->
+
+<ul class="timeline">
+
+	<!-- Item 1 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span style=" color: #ffffff;" class="flag">1-Smooth Launch</span>
+			</div>
+			<div class="desc">Successfully launch all 10,000 clowns to the community with a fair minting process.</div>
+		</div>
+	</li>
+  
+	<!-- Item 2 -->
+	<li>
+		<div class="direction-l">
+			<div class="flag-wrapper">
+				<span style=" color: #ffffff;" class="flag">2-Marketplace Integration</span>
+			</div>
+			<div class="desc">Buy/sell your Cheeky Clowns in digitalized markets and on solsea.io right after the launch!</div>
+		</div>
+	</li>
+
+	<!-- Item 3 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span style=" color: #ffffff;" class="flag">3-DAO Creation</span>
+			</div>
+			<div class="desc">The Cheeky Clown DAO will be created. All revenues will be shared with weekly contests and rewards for the best Cheeky Laughs (see below).</div>
+		</div>
+	</li>
+
+  	<!-- Item 4 -->
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span style=" color: #ffffff;" class="flag">4-Cheeky Laugh</span>
+        </div>
+        <div class="desc">A unique Personalizable Laugh will be added to each NFT, for a fee that will go into our DAO.  First Project of its kind!
+
+          Your Cheeky Clown evolves and changes with time: from a timid Cheeky Clown to your own personalized laughter machine!</div>
+      </div>
+    </li>
+
+  	<!-- Item 5 -->
+	<li>
+		<div class="direction-r">
+			<div class="flag-wrapper">
+				<span style=" color: #ffffff;" class="flag">5-Metaverse Circus</span>
+			</div>
+			<div class="desc">Multiple Metaverse lands will be bought to create the first Virtual Metaverse Circus!</div>
+		</div>
+	</li>
+  
+</ul>
+
+  </section>
+
+</div>
+  
+
+
+
+<section class="container">
+	<div class="row ">
+		<div class="col-sm-3">
+			<div class="card" style="background-color: transparent; border: none;">
+				<img style="border-radius: 30px;" src="https://www.cheekyclowncircusclub.com/wp-content/uploads/2021/12/94-1.png" class="card-img-top" alt="...">
+				<div class="card-body" style="text-align: center;">
+				  <h5 class="card-title" style="color: #ff462c;">Weldone Wendell</h5>
+				  <p class="card-text" style="color: #336699;">PRODUCT</p>
+				  
+				</div>
+			  </div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card" style=" background-color: transparent; border: none;">
+				<img style="border-radius: 30px;" src="https://www.cheekyclowncircusclub.com/wp-content/uploads/2021/12/79-1.png" class="card-img-top" alt="...">
+				<div class="card-body" style="text-align: center;">
+				  <h5 class="card-title" style="color: #ff462c;">Tino Clono</h5>
+				  <p class="card-text" style="color: #336699;">GRAND MASTER</p>
+				  
+				</div>
+			  </div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card" style=" background-color: transparent; border: none;">
+				<img style="border-radius: 30px;" src="https://www.cheekyclowncircusclub.com/wp-content/uploads/2021/12/11.png" class="card-img-top" alt="...">
+				<div class="card-body" style="text-align: center;">
+				  <h5 class="card-title" style="color: #ff462c;">Happy Bozo</h5>
+				  <p class="card-text" style="color: #336699;">LEAD ARTIST</p>
+				  
+				</div>
+			  </div>
+		</div>
+		<div class="col-sm-3">
+			<div class="card" style=" background-color: transparent; border: none;">
+				<img style="border-radius: 30px;" src="https://www.cheekyclowncircusclub.com/wp-content/uploads/2021/12/218.png" class="card-img-top" alt="...">
+				<div class="card-body" style="text-align: center;">
+				  <h5 class="card-title" style="color: #ff462c;">Eini Stein</h5>
+				  <p class="card-text" style="color: #336699;">DEVELOPER</p>
+				</div>
+			  </div>
+		</div>
+	  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="fa" class="container">
+  
+<div class="row">
+  <div class="col-md-12 mt-5">
+    <h2 class="title" >FAQS</h2>
+  </div>
+  <div class="col-md-12 mt-5">
+    
+    <div class="tabs">
+      <div class="tab">
+        <input type="checkbox" id="chck1">
+        <label class="tab-label" for="chck1">What are Cheeky Clowns?</label>
+        <div class="tab-content">
+          Cheeky Clowns are algorithmically generated NFT clowns by the number of 10,000. Each clown is unique, and can be personalized with a Unique Laugh!
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck2">
+        <label class="tab-label" for="chck2">Why get a Cheeky Clown?</label>
+        <div class="tab-content">
+          To be part of a community free of laughing and to play an important part of the first circus in 
+the Sandbox - Metaverse
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck3">
+        <label class="tab-label" for="chck3">What Ethereum wallets can I use?</label>
+        <div class="tab-content">
+          We will be using Metamask wallets for the website connection.
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck4">
+        <label class="tab-label" for="chck4">Who are you?</label>
+        <div class="tab-content">
+          We are a team of four childhood friends who always shared a similar vision of the world we live in. The CCCC NFT Community is the ideal medium to express our artistic endeavour and connect with similar humor versed individuals.
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck5">
+        <label class="tab-label" for="chck5">When & Where is the launch?</label>
+        <div class="tab-content">
+          The Genesis collection is February 14 at 8pm eastern time
+The Cheeky Clown collection will be announced shortly after
+        </div>
+      </div>
+      <div class="tab">
+        <input type="checkbox" id="chck6">
+        <label class="tab-label" for="chck6">How much does it cost to mint a Cheeky Clown?</label>
+        <div class="tab-content">
+          Each Cheeky Clown will cost 0,1 eth to mint, only via cheekyclowncircusclub.com
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+</section>
+<footer class="section footer-section section-pad-sm section-bg " >
+  <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12 mt-5">
+        <span style="color: #336699;" class="copyright-text">
+        Made By <a style="color: #FA5846;" href= target="_blank">Anonymous Clown</a>
+<br>
+<br>
+		Copyright © 2022 Cheeky Clown Circus Club <br>
+
+		<a  style="color: #FA5846;" href="" target="_blank">Terms and conditions</a></span>
+		<ul class="social-icons">
+	  <li><a class="instagram" href="https://www.instagram.com/cheekyclowncircusclub"><i class="bi bi-instagram"></i></a></li>
+	  <li><a class="twitter" href="https://www.twitter.com/cheekyclowncc"><i class="bi bi-twitter"></i></i></a></li>
+	  <li><a class="discord" href="https://discord.com/invite/QRqn2e5T5C"><i class="bi bi-discord"></i></a></li>   
+	</ul>
+        </div>
+      </div>
+
+	  
+  </div>
+  
+	
+  
+</footer>
+
+
+
+
+</body>
+</html>
